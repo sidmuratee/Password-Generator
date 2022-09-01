@@ -17,7 +17,13 @@ function writePassword() {
 }
 
 function generatePassword(){
-    let str = "";
+    let password = prompt ("How many characters in the password (8-128)?")
+    
+    
+    if (confirm ("Do you want to include Numerical characters?"))
+    if (confirm ("Do you want any UPPERCASE characters?"))
+    if (confirm ("Do you want any 'lowercase' characters?"))
+    if (confirm ("Do you want any 'Special Characters'?"))
 
     for (let i = 0; i < 100; i++) {
         let randomNumber = Math.floor(Math.random()*lowercaseAlphabet.length);
